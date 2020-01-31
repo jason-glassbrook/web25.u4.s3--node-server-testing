@@ -2,14 +2,22 @@
   ~/ - router
 ***********************************************************/
 
-const { Router } = require ('./__needs')
-const routes = require ('./_routes')
+const {
+  Router,
+  middleware : {
+    respondWithNotImplemented,
+  },
+} = require ('./__needs')
+const _routes = require ('./_routes')
 
 /**************************************/
 
 const router = Router ()
 
-router.use ('/', routes)
+router.use ('/', _routes)
+
+router.route ('/*')
+.all (respondWithNotImplemented ())
 
 /**************************************/
 
