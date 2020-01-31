@@ -18,7 +18,18 @@ router.use ('/api',
   _middleware (),
 )
 
-router.route ('*')
+router.route ('/api')
+.get ((ri, ro) => {
+
+  ro
+  .status (200)
+  .json ({
+    'message' : 'hello world',
+  })
+
+})
+
+router.route ('/api/*')
 .all (respondWithNotImplemented ())
 
 /**************************************/
