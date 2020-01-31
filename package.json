@@ -8,8 +8,9 @@
   "private": false,
   "main": "index.js",
   "scripts": {
-    "test": "cross-env DB_ENV=testing jest --watch",
-    "test-once": "cross-env DB_ENV=testing jest"
+    "dev:start": "cross-env SERVER_ENV=development nodemon index.js",
+    "test:start": "cross-env SERVER_ENV=testing jest --watch",
+    "test:once": "cross-env SERVER_ENV=testing jest"
   },
   "dependencies": {
     "cors": "^2.8.5",
