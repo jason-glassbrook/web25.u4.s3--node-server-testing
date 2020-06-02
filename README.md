@@ -2,9 +2,9 @@
 
 ## Topics
 
-- automated testing.
-- jest testing framework.
-- supertest module.
+-   automated testing.
+-   jest testing framework.
+-   supertest module.
 
 ## Assignment
 
@@ -12,13 +12,13 @@ For this project you will use `Test Driven Development` to create a RESTful API 
 
 ## Download Project and Install Dependencies
 
-- fork and clone this repository.
-- **CD into the folder** where you downloaded the repository.
-- run `npm i` to download all dependencies.
-- type `npm test` to run the tests.
+-   [x] fork and clone this repository.
+-   [x] **CD into the folder** where you downloaded the repository.
+-   [x] run `npm i` to download all dependencies.
+-   [x] type `npm test` to run the tests.
 
 ## Requirements
 
-- use `jest` and `supertest` to write the tests.
-- Your API must be able to **create** and **delete** a _resource_ of your choosing.
-- Write a minimum of two tests per route handler.
+-   [x] use `jest` and `supertest` to write the tests.
+-   [x] Your API must be able to **create** and **delete** a _resource_ of your choosing.
+-   [x] Write a minimum of two tests per route handler.
